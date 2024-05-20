@@ -11,7 +11,7 @@ public class Main
         String name = scanner.nextLine();
 
         MainMenu menu = new MainMenu(name);
-        menu.GreetPlayer();
-
+        menu.greetPlayer();
+        menu.showOptions();
     }
 }
