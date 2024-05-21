@@ -16,13 +16,27 @@ public class Main
 
         System.out.println();
         String playerInput = "";
-        boolean exit = false;
+        playerInput = scanner.nextLine();
         // Main Loop
-        while (!exit)
+        if (playerInput.equals("1"))
         {
-            playerInput = scanner.nextLine();
-            exit = (playerInput.toLowerCase().equals("quit") || playerInput.equals("2"));
+            System.out.println("Game Starded!");
+            boolean exit = false;
+            Chessboard chessboard = new Chessboard();
+            chessboard.initBoard();
+            chessboard.renderChessBoard();
+            while (!exit)
+            {
+                playerInput = scanner.nextLine();
+                exit = (playerInput.equalsIgnoreCase("quit") || playerInput.equalsIgnoreCase("2"));
+            }
         }
+        else
+        {
+            System.out.println("See you later!");
+        }
+
+
 
 
     }
