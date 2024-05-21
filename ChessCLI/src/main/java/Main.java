@@ -13,5 +13,17 @@ public class Main
         MainMenu menu = new MainMenu(name);
         menu.greetPlayer();
         menu.showOptions();
+
+        System.out.println();
+        String playerInput = "";
+        boolean exit = false;
+        // Main Loop
+        while (!exit)
+        {
+            playerInput = scanner.nextLine();
+            exit = (playerInput.toLowerCase().equals("quit") || playerInput.equals("2"));
+        }
+
+
     }
 }

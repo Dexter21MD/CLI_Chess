@@ -21,6 +21,6 @@ public class MainMenu
 
     public  void showOptions()
     {
-        System.out.printf(" 1) %s %n 2) %s", this.messageStrings.startGameOption, this.messageStrings.exittGameOption);
+        System.out.printf(" 1) %s %n 2) %s", this.messageStrings.startGameOption, this.messageStrings.exitGameOption);
     }
 }
