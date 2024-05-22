@@ -1,7 +1,7 @@
 public class Chessboard
 {
     String[][] board = new String[9][9];
-    String[] rowChar = {" ", "a","b","c","d","e","f","g","h", " "};
+    String[] rowChar = {" ", "a","b","c","d","e","f","g","h"};
     
     public  void initBoard()
     {
@@ -41,9 +41,27 @@ public class Chessboard
         {
             for (int j = 0; j < this.board[i].length; j++)
             {
-                System.out.print(this.board[i][j]);
+                System.out.print((j > 0) ? " _ " : " ");
+            }
+
+            System.out.println();
+            for (int z = 0; z < this.board[i].length; z++)
+            {
+                System.out.print((z > 0) ? this.board[i][z] + "  " : this.board[i][z] + " " );
+                //System.out.print(this.board[i][z] + "  ");
             }
             System.out.println();
+
         }
     }
 }
+
+
+/*
+for (int j = 0; j < this.board[i].length; j++)
+            {
+                System.out.print(this.board[i][j]);
+            }
+            System.out.println();
+
+ */
