@@ -15,7 +15,7 @@ public class Chessboard
 
     char[] rowChar = {' ', 'a','b','c','d','e','f','g','h'};
     
-    public  void initBoard()
+    public void initBoard()
     {
         /* initialize board with navigation values:
          horizontal with a-h stored in row char
